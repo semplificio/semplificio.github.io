@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatture elettroniche XML in Excel: 3 metodi | Semplificio</title>
+<meta name="description" content="Come trasformare le fatture elettroniche XML e P7M in un foglio Excel: esportazione dal gestionale, Power Query di Excel o un programma dedicato.">
+<link rel="canonical" href="https://semplificio.github.io/guide/fatture-xml-in-excel.html">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fatture elettroniche XML in Excel: 3 metodi | Semplificio">
+<meta property="og:description" content="Come trasformare le fatture elettroniche XML e P7M in un foglio Excel: esportazione dal gestionale, Power Query di Excel o un programma dedicato.">
+<meta property="og:url" content="https://semplificio.github.io/guide/fatture-xml-in-excel.html">
+<meta property="og:image" content="https://semplificio.github.io/img/anteprima-social.png">
+<meta property="og:locale" content="it_IT">
+<link rel="stylesheet" href="../stile.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Fatture elettroniche XML in Excel: 3 metodi", "inLanguage": "it", "dateModified": "2026-10-12", "author": {"@type": "Organization", "name": "Semplificio"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="marchio" href="../index.html"><img src="../img/logo.png" alt="" width="36" height="36">semplificio</a>
+<nav><a href="../fatture-in-excel.html">Fatture</a><a href="../estratti-conto-in-excel.html">Estratti conto</a><a href="../guide/index.html">Guide</a></nav>
+</div></header>
+<main class="wrap">
+<div class="articolo"><h1>Fatture elettroniche XML in Excel: 3 metodi</h1><div class="meta">Guida Semplificio · aggiornata a ottobre 2026</div>
+<p>Le fatture elettroniche sono file XML: perfetti per i computer, scomodi per le persone. Se vuoi controllare le spese per fornitore, l'IVA del trimestre o preparare un riepilogo per il commercialista, ti serve un foglio Excel con una riga per fattura. Ecco tre modi per ottenerlo.</p>
+<h2>1. Esportazione dal gestionale o dal programma di fatturazione</h2>
+<p>Se usi un gestionale o un servizio di fatturazione elettronica, controlla prima se ha una funzione di esportazione in Excel o CSV. È la strada più veloce. Spesso però esporta solo alcuni campi, per esempio i totali senza il dettaglio IVA, e non serve se le fatture le hai solo come file.</p>
+<h2>2. Power Query di Excel</h2>
+<p>Excel ha uno strumento integrato, Power Query, che può importare più file da una cartella: menu <strong>Dati → Recupera dati → Da file → Da cartella</strong>. Con i file XML funziona, ma richiede pazienza:</p>
+<ul>
+<li>la struttura di una fattura elettronica è annidata (intestazione, corpo, righe, riepiloghi IVA) e va "espansa" a mano, livello per livello;</li>
+<li>le fatture con più aliquote IVA producono più righe per la stessa fattura;</li>
+<li>i file <strong>.p7m firmati</strong> non sono leggibili direttamente: vanno prima estratti uno per uno;</li>
+<li>se cambia qualcosa nei file, la query può smettere di funzionare.</li>
+</ul>
+<p>È una buona soluzione se conosci Power Query e hai fatture sempre uguali.</p>
+<h2>3. Un programma dedicato</h2>
+<p>Un convertitore pensato per la FatturaPA fa tutto il lavoro: legge XML e P7M, anche dentro gli zip, riconosce fatture semplificate e note di credito, e crea un foglio già ordinato.</p>
+<div class="box-prodotto"><img src="../img/icona-fatture.png" alt="" width="64" height="64"><div>
+<p><strong>Fatture in Excel</strong> converte in un clic le fatture XML e P7M (anche lo zip del Cassetto fiscale) in un file Excel con dettaglio IVA e riepiloghi. Funziona sul tuo computer, senza caricare le fatture online.</p>
+<div class="bottoni"><a class="btn pieno" href="https://semplificio.gumroad.com/l/fatture-excel-gratis">Prova gratis</a><a class="btn vuoto" href="../fatture-in-excel.html">Scopri di più</a></div></div></div>
+<h2>Consiglio sulla privacy</h2>
+<p>Molti convertitori online chiedono di caricare le fatture su un sito. Le fatture contengono dati di clienti e fornitori: se puoi, preferisci strumenti che lavorano sul tuo computer.</p>
+</div>
+</main>
+<footer><div class="wrap">
+<p><strong>Semplificio</strong> · piccoli programmi per sbrigare il lavoro d'ufficio · <a href="mailto:semplificio@gmail.com">semplificio@gmail.com</a></p>
+<p><a href="../privacy.html">Privacy</a> · <a href="../guide/index.html">Guide</a> · I pagamenti sono gestiti da Gumroad. Excel è un marchio di Microsoft: questo sito non è affiliato a Microsoft né all'Agenzia delle Entrate.</p>
+</div></footer>
+</body>
+</html>

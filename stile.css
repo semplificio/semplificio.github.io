@@ -1,0 +1,62 @@
+:root{--verde:#107c41;--verde-chiaro:#e4f0e8;--arancio:#d67828;--testo:#1c2026;--grigio:#5f646c;--sfondo:#f6f4ef;--bianco:#fff;--bordo:#dcd8d0}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--sfondo);color:var(--testo);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--verde)}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{background:var(--bianco);border-bottom:1px solid var(--bordo)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;flex-wrap:wrap}
+.marchio{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--testo);font-weight:800;font-size:22px}
+.marchio img{width:36px;height:36px;border-radius:9px}
+nav a{margin-left:18px;text-decoration:none;color:var(--grigio);font-weight:600;font-size:16px}
+nav a:hover{color:var(--verde)}
+.hero{padding:56px 0 36px}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.12;margin:0 0 14px}
+.hero h1 span{color:var(--verde)}
+.hero p.sotto{font-size:21px;color:var(--grigio);margin:0;max-width:720px}
+.schede{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin:30px 0 10px}
+.scheda{background:var(--bianco);border:1px solid var(--bordo);border-radius:18px;padding:26px;display:flex;flex-direction:column}
+.scheda .testa{display:flex;gap:16px;align-items:center;margin-bottom:10px}
+.scheda .testa img{width:64px;height:64px}
+.scheda h2,.scheda h3{margin:0;font-size:24px}
+.scheda p{color:var(--grigio);margin:8px 0 18px;flex:1}
+.bottoni{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:17px}
+.btn.pieno{background:var(--verde);color:#fff}
+.btn.vuoto{border:2px solid var(--verde);color:var(--verde);background:#fff}
+.btn:hover{filter:brightness(1.07)}
+section{padding:26px 0}
+h2{font-size:30px;line-height:1.2;margin:10px 0 14px}
+h3{font-size:22px;margin:22px 0 8px}
+.punti{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.punti li{background:var(--verde-chiaro);border-radius:14px;padding:14px 18px;font-weight:600;color:#0d5c31}
+.figura{background:#fff;border:1px solid var(--bordo);border-radius:16px;overflow:hidden;margin:18px 0}
+.nota{background:#fff8ec;border-left:5px solid var(--arancio);padding:14px 18px;border-radius:8px;margin:18px 0}
+.articolo{background:#fff;border:1px solid var(--bordo);border-radius:18px;padding:30px 34px;margin:30px 0}
+.articolo h1{font-size:clamp(28px,4.4vw,40px);line-height:1.15;margin:0 0 10px}
+.articolo .meta{color:var(--grigio);font-size:15px;margin-bottom:22px}
+.articolo ol li,.articolo ul li{margin:6px 0}
+.box-prodotto{display:flex;gap:18px;align-items:center;background:var(--verde-chiaro);border-radius:16px;padding:18px 22px;margin:26px 0}
+.box-prodotto img{width:64px;height:64px;flex:none}
+.box-prodotto p{margin:0 0 10px}
+.elenco-guide{list-style:none;padding:0;margin:0}
+.elenco-guide li{background:#fff;border:1px solid var(--bordo);border-radius:14px;margin:10px 0}
+.elenco-guide a{display:block;padding:16px 20px;text-decoration:none;color:var(--testo);font-weight:700}
+.elenco-guide span{display:block;color:var(--grigio);font-weight:400;font-size:16px}
+details{background:#fff;border:1px solid var(--bordo);border-radius:12px;padding:12px 18px;margin:10px 0}
+summary{font-weight:700;cursor:pointer}
+.video{display:block;position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--bordo)}
+.video::after{content:"▶  Guarda il video (45 secondi)";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(20,24,28,.85);color:#fff;font-weight:700;padding:14px 24px;border-radius:999px;font-size:18px;white-space:nowrap}
+footer{margin-top:40px;background:#fff;border-top:1px solid var(--bordo);padding:26px 0;color:var(--grigio);font-size:15px}
+footer a{color:var(--grigio)}
+code{background:#f0eee8;padding:2px 6px;border-radius:5px;font-size:.92em}
+@media (max-width:640px){
+  body{font-size:17px}
+  nav a{margin:0 14px 0 0}
+  .articolo{padding:22px 18px}
+  h2{font-size:24px}
+  .articolo h2{font-size:23px}
+  .box-prodotto{flex-direction:column;align-items:flex-start}
+  .video::after{font-size:15px;padding:10px 16px}
+}

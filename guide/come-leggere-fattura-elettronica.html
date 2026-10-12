@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Come è fatta una fattura elettronica | Semplificio</title>
+<meta name="description" content="Le parti di un file di fattura elettronica FatturaPA spiegate in modo semplice: intestazione, fornitore, cliente, righe, riepilogo IVA, pagamento e tipi di documento.">
+<link rel="canonical" href="https://semplificio.github.io/guide/come-leggere-fattura-elettronica.html">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Come è fatta una fattura elettronica | Semplificio">
+<meta property="og:description" content="Le parti di un file di fattura elettronica FatturaPA spiegate in modo semplice: intestazione, fornitore, cliente, righe, riepilogo IVA, pagamento e tipi di documento.">
+<meta property="og:url" content="https://semplificio.github.io/guide/come-leggere-fattura-elettronica.html">
+<meta property="og:image" content="https://semplificio.github.io/img/anteprima-social.png">
+<meta property="og:locale" content="it_IT">
+<link rel="stylesheet" href="../stile.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Come è fatta una fattura elettronica", "inLanguage": "it", "dateModified": "2026-10-12", "author": {"@type": "Organization", "name": "Semplificio"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="marchio" href="../index.html"><img src="../img/logo.png" alt="" width="36" height="36">semplificio</a>
+<nav><a href="../fatture-in-excel.html">Fatture</a><a href="../estratti-conto-in-excel.html">Estratti conto</a><a href="../guide/index.html">Guide</a></nav>
+</div></header>
+<main class="wrap">
+<div class="articolo"><h1>Come è fatta una fattura elettronica</h1><div class="meta">Guida Semplificio · aggiornata a ottobre 2026</div>
+<p>Dal 2019 in Italia le fatture tra imprese e professionisti sono elettroniche: non un PDF, ma un file <strong>XML</strong> nel formato chiamato <strong>FatturaPA</strong>, che viaggia attraverso il Sistema di Interscambio (SdI) dell'Agenzia delle Entrate. Aprendolo con un editor di testo si vede un elenco di "etichette" tra parentesi angolate. Ecco cosa significano le parti principali.</p>
+<h2>L'intestazione: chi e a chi</h2>
+<ul>
+<li><strong>DatiTrasmissione</strong>: informazioni tecniche sull'invio, come il codice destinatario o la PEC a cui recapitare la fattura.</li>
+<li><strong>CedentePrestatore</strong>: chi emette la fattura (il fornitore), con partita IVA, denominazione e indirizzo.</li>
+<li><strong>CessionarioCommittente</strong>: chi la riceve (il cliente).</li>
+</ul>
+<h2>Il corpo: cosa e quanto</h2>
+<ul>
+<li><strong>DatiGeneraliDocumento</strong>: tipo di documento, data, numero ed eventualmente l'importo totale.</li>
+<li><strong>DettaglioLinee</strong>: le righe della fattura, con descrizione, quantità, prezzo e aliquota IVA.</li>
+<li><strong>DatiRiepilogo</strong>: per ogni aliquota IVA, l'imponibile e l'imposta. È la parte più utile per i conti.</li>
+<li><strong>DatiPagamento</strong>: modalità di pagamento (bonifico, RID, contanti…) e scadenze.</li>
+</ul>
+<h2>I tipi di documento più comuni</h2>
+<ul>
+<li><strong>TD01</strong>: fattura</li>
+<li><strong>TD04</strong>: nota di credito (va sottratta, non sommata)</li>
+<li><strong>TD05</strong>: nota di debito</li>
+<li><strong>TD06</strong>: parcella</li>
+<li><strong>TD07</strong>, <strong>TD08</strong>: fattura e nota di credito semplificate</li>
+</ul>
+<h2>Fattura ordinaria e semplificata</h2>
+<p>La fattura <strong>semplificata</strong> ha una struttura più leggera e indica importi comprensivi di IVA. È usata per importi piccoli: se fai un riepilogo, va trattata in modo diverso dalla fattura ordinaria.</p>
+<h2>XML e P7M</h2>
+<p>Una fattura può arrivare come file <code>.xml</code> semplice oppure come <code>.xml.p7m</code>, cioè firmata digitalmente. Il contenuto è lo stesso: la firma è una "busta" attorno al file XML. Ne parliamo nella guida <a href="come-aprire-file-p7m.html">Come aprire un file P7M</a>.</p>
+<div class="box-prodotto"><img src="../img/icona-fatture.png" alt="" width="64" height="64"><div>
+<p><strong>Fatture in Excel</strong> converte in un clic le fatture XML e P7M (anche lo zip del Cassetto fiscale) in un file Excel con dettaglio IVA e riepiloghi. Funziona sul tuo computer, senza caricare le fatture online.</p>
+<div class="bottoni"><a class="btn pieno" href="https://semplificio.gumroad.com/l/fatture-excel-gratis">Prova gratis</a><a class="btn vuoto" href="../fatture-in-excel.html">Scopri di più</a></div></div></div>
+</div>
+</main>
+<footer><div class="wrap">
+<p><strong>Semplificio</strong> · piccoli programmi per sbrigare il lavoro d'ufficio · <a href="mailto:semplificio@gmail.com">semplificio@gmail.com</a></p>
+<p><a href="../privacy.html">Privacy</a> · <a href="../guide/index.html">Guide</a> · I pagamenti sono gestiti da Gumroad. Excel è un marchio di Microsoft: questo sito non è affiliato a Microsoft né all'Agenzia delle Entrate.</p>
+</div></footer>
+</body>
+</html>

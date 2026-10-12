@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://semplificio.github.io/sitemap.xml
